@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Edit profile page - Bootdey.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../Css/Securite.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!-- Start NavBar -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <!-- <img src="../images/img/logo.PNG" class="brand-img" alt=""> -->
+            <h3>THE ATHLETIC </h3>
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <a href="./Accueil2.html" style="text-decoration: none;"><img src="../images/img/home.PNG" class="icon"
+                        alt=""></a>
+                <a href="Chat.html" style="text-decoration: none;"><img src="../images/img/messenger.PNG" class="icon"
+                        alt=""></a>
+                <a href="AddPost.html" style="text-decoration: none;"><img src="../images/img/add.PNG" class="icon"
+                        alt=""></a>
+                <img src="../images/img/explore.PNG" class="icon" alt="">
+                <a href="./Notifications.html" style="text-decoration: none;">
+                    <img src="../images/img/like.PNG" class="icon" alt="">
+                </a>
+                <div class="icon user-profile" onclick="toggle()">
+                    <ul class="profile-dropdown-list">
+                        <li class="profile-dropdown-list-item">
+                            <a href="./EditProfil.html">
+                                <i class="fa-regular fa-user"></i>
+                                Edit Profile
+                            </a>
+                        </li>
+                        <li class="profile-dropdown-list-item">
+                            <a href="./Securite.html">
+                                <i class="fa-solid fa-chart-line"></i>
+                                Securite
+                            </a>
+                        </li>
+
+                        <li class="profile-dropdown-list-item">
+                            <a href="./Settings.html">
+                                <i class="fa-solid fa-sliders"></i>
+                                Settings
+                            </a>
+                        </li>
+
+                        <li class="profile-dropdown-list-item">
+                            <a href="./LoginPrincipal.html">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Start Sidebar  -->
+    <aside class="sidebar">
+
+        <nav>
+            <button>
+                <span>
+                    <i class='bx bx-home'></i>
+                    <span>Home</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bx-search'></i>
+                    <span>Search</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bx-compass'></i>
+                    <span>Explore</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bxl-telegram'>
+                        <!-- <span>13</span> -->
+                    </i>
+                    <span>Messages</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bx-heart'>
+                        <!-- <em></em> -->
+                    </i>
+                    <span>Notifications</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bx-plus-circle'></i>
+                    <span>Create</span>
+                </span>
+            </button>
+
+            <!-- <button>
+          <span>
+              <img src="../images/pdp.jpg" alt="" style="border-radius: 50%;">
+              <span>Profile</span>
+          </span>
+      </button> -->
+
+        </nav>
+    </aside>
+    <!-- End SideBar -->
+
+    <!-- Start BottomBar -->
+    <nav class="Bottombar">
+        <div class="nav-wrapper">
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <a href="./Accueil2.html" style="text-decoration: none;">
+                    <img src="../images/img/home.PNG" class="icon" alt="">
+                </a>
+                <img src="../images/img/messenger.PNG" class="icon" alt="">
+                <a href="./AddPost.html" style="text-decoration: none;">
+                    <img src="../images/img/add.PNG" class="icon" alt=""></a>
+                <!-- <img src="../images/img/explore.PNG" class="icon" alt=""> -->
+                <a href="./Notifications.html" style="text-decoration: none;">
+                    <img src="../images/img/like.PNG" class="icon" alt="">
+                </a>
+                <a href="./profile.html" style="text-decoration: none;">
+                    <div class="icon user-profile"></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End BottomBar -->
+
+    <!-- Start Securite Form  -->
+    <section class="container-Sec">
+        <div class="info-EdP">
+            <div class="user-EdP">
+                <FiChevronLeft id="backButton" class='gg--chevron-left'></FiChevronLeft>
+                <h1>Notifications</h1>
+            </div>
+        </div>
+        <div class="card-image-EdP">
+        </div>
+        <header>Hamza Bannour</header>
+        <form action="#" class="form-EdP">
+            <div class="input-box-EdP">
+                <label> Email</label>
+                <input type="email" placeholder="Enter UserName" required />
+            </div>
+            <div class="input-box-EdP">
+                <label>Password</label>
+                <input type="password" placeholder="" required />
+            </div>
+            <div class="input-box-EdP">
+                <label>Password Confirmation</label>
+                <input type="password" placeholder="" required />
+            </div>
+            <button>Submit</button>
+        </form>
+    </section>
+    <!-- End Securite form -->
+
+    <script type="JavaScript" src="./drop-down-menu.js"></script>
+
+    <script>
+        // JavaScript
+        document.getElementById('backButton').addEventListener('click', function () {
+            window.history.back();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../Css/Accueil2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Start NavBar -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <!-- <img src="/images/img/logo.PNG" class="brand-img" alt=""> -->
+            <h3>THE ATHLETIC </h3>
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <a href="./Accueil2.html" style="text-decoration: none;"><img src="../images/img/home.PNG" class="icon"
+                        alt=""></a>
+                <a href="Chat.html" style="text-decoration: none;"><img src="../images/img/messenger.PNG" class="icon"
+                        alt=""></a>
+                <a href="AddPost.html" style="text-decoration: none;"><img src="../images/img/add.PNG" class="icon"
+                        alt=""></a>
+                <img src="../images/img/explore.PNG" class="icon" alt="">
+                <a href="./Notifications.html" style="text-decoration: none;">
+                    <img src="../images/img/like.PNG" class="icon" alt="">
+                </a>
+                <div class="icon user-profile" onclick="toggle()">
+                    <ul class="profile-dropdown-list">
+                        <li class="profile-dropdown-list-item">
+                            <a href="./EditProfil.html">
+                                <i class="fa-regular fa-user"></i>
+                                Edit Profile
+                            </a>
+                        </li>
+                        <li class="profile-dropdown-list-item">
+                            <a href="./Securite.html">
+                                <i class="fa-solid fa-chart-line"></i>
+                                Securite
+                            </a>
+                        </li>
+
+                        <li class="profile-dropdown-list-item">
+                            <a href="./Settings.html">
+                                <i class="fa-solid fa-sliders"></i>
+                                Settings
+                            </a>
+                        </li>
+
+                        <li class="profile-dropdown-list-item">
+                            <a href="./LoginPrincipal.html">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Start Sidebar  -->
+    <aside class="sidebar">
+        <!-- <header class="sidebar-header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" class="logo-img">
+  </header> -->
+
+        <nav>
+            <button>
+                <span>
+                    <i class='bx bx-home'></i>
+                    <span>Home</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bx-search'></i>
+                    <span>Search</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bx-compass'></i>
+                    <span>Explore</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bxl-telegram'>
+                        <!-- <span>13</span> -->
+                    </i>
+                    <span>Messages</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bx-heart'>
+                        <!-- <em></em> -->
+                    </i>
+                    <span>Notifications</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bx-plus-circle'></i>
+                    <span>Create</span>
+                </span>
+            </button>
+
+            <!-- <button>
+          <span>
+              <img src="../images/pdp.jpg" alt="" style="border-radius: 50%;">
+              <span>Profile</span>
+          </span>
+      </button> -->
+
+        </nav>
+    </aside>
+    <!-- End SideBar -->
+
+    <!-- Start BottomBar -->
+    <nav class="Bottombar">
+        <div class="nav-wrapper">
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <a href="./Accueil2.html" style="text-decoration: none;">
+                    <img src="../images/img/home.PNG" class="icon" alt="">
+                </a>
+                <img src="../images/img/messenger.PNG" class="icon" alt="">
+                <a href="./AddPost.html" style="text-decoration: none;">
+                    <img src="../images/img/add.PNG" class="icon" alt=""></a>
+                <!-- <img src="../images/img/explore.PNG" class="icon" alt=""> -->
+                <a href="./Notifications.html" style="text-decoration: none;">
+                    <img src="../images/img/like.PNG" class="icon" alt="">
+                </a>
+                <a href="./profile.html" style="text-decoration: none;">
+                    <div class="icon user-profile"></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End BottomBar -->
+
+    <!-- Start Post 1 -->
+    <section class="main">
+        <div class="wrapper">
+            <div class="left-col">
+                <div class="post">
+                    <div class="info">
+                        <div class="user">
+                            <div class="profile-pic"><a href="./profile.html" style="text-decoration: none;"><img src="../images/pdp.jpg" alt="" style="height: 40px;
+                            width: 40px;
+                            padding: 0;
+                            background: none;
+                            border-radius: 50%;"></a></div>
+
+                            <p class="username">Hamza Bannour</p>
+                        </div>
+                        <img src="../images/img/option.PNG" class="options" alt="">
+                    </div>
+                    <img src="../images/Register_Img.jpg" class="post-image" alt="">
+                    <!-- Div pour afficher l'image zoomée -->
+                    <div class="overlay"></div>
+                    <img src="" class="zoomed-image" alt="Zoomed Image">
+                    <input type="checkbox" name="" id="like1" class="btn like" />
+                    <input type="checkbox" name="" id="comment1" class="btn commentt" />
+
+                    <div class="post-content">
+                        <div class="reaction-wrapper">
+
+
+                            <label for="like1" class="like-btn"></label>
+                            <label for="comment1" class="comment-btnn"></label>
+                            <img src="/images/img/send.PNG" class="icon" alt="">
+                            <img src="/images/img/save.PNG" class="icon save" alt="">
+                        </div>
+                        <p class="likes">1,012 likes</p>
+                        <label for="comment1" class="comment-btn2">
+                            <p class="description"><span>username </span> Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident
+                                eum
+                                quo natus molestias?</p>
+                        </label>
+                        <p class="post-time">2 minutes ago</p>
+                    </div>
+                    <div class="comment-wrapper">
+                        <img src="/images/img/smile.PNG" class="icon" alt="">
+                        <input type="text" class="comment-box" placeholder="Add a comment">
+                        <button class="comment-btn">post</button>
+                    </div>
+
+                    <!-- Display Comments -->
+                    <div class="post-comment">
+                        <div class="head">
+                            <div class="name">Comments</div>
+                            <label for="comment1" class="comment-btn3">
+                                <i class="fa-solid fa-xmark"></i>
+                            </label>
+                        </div>
+                        <div class="comments">
+                            <div class="comment">
+                                <img src="../images/pdp.jpg" alt="" />
+                                <span>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+                                    accusamus velit, ipsa provident.
+                                    <div class="desc">2m ago <span>Reply</span></div>
+                                </span>
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                            <div class="comment">
+                                <img src="../images/pdp.jpg" alt="" />
+                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Explicabo nesciunt consectetur quos laudantium.
+                                    <div class="desc">1h ago <span>Reply</span></div>
+                                </span>
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                            <div class="comment">
+                                <img src="../images/pdp.jpg" alt="" />
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+                                    iusto.
+                                    <div class="desc">1d ago <span>Reply</span></div>
+                                </span>
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+
+                            <div class="comment">
+                                <img src="../images/pdp.jpg" alt="" />
+                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Explicabo nesciunt consectetur.
+                                    <div class="desc">1h ago <span>Reply</span></div>
+                                </span>
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                            <div class="comment">
+                                <img src="../images/pdp.jpg" alt="" />
+                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+
+                                    <div class="desc">1h ago <span>Reply</span></div>
+                                </span>
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                            <div class="comment">
+                                <img src="../images/pdp.jpg" alt="" />
+                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Explicabo nesciunt consectetur.
+                                    <div class="desc">1h ago <span>Reply</span></div>
+                                </span>
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                            <div class="comment">
+                                <img src="../images/pdp.jpg" alt="" />
+                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Explicabo.
+                                    <div class="desc">1h ago <span>Reply</span></div>
+                                </span>
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                            <div class="comment">
+                                <img src="../images/pdp.jpg" alt="" />
+                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Explicabo nesciunt consectetur quos.
+                                    <div class="desc">1h ago <span>Reply</span></div>
+                                </span>
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                            <div class="comment">
+                                <img src="../images/pdp.jpg" alt="" />
+                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Explicabo.
+                                    <div class="desc">1h ago <span>Reply</span></div>
+                                </span>
+                                <!-- <i class="fa-regular fa-heart"></i> -->
+                            </div>
+                        </div>
+
+                        <div class="new-comment">
+                            <img src="../images/pdp.jpg" alt="" />
+                            <input type="text" placeholder="Add a comment..." />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Post 1 -->
+
+
+    <script>
+        // Récupération de l'élément image zoomée
+        const zoomedImage = document.querySelector('.zoomed-image');
+        // Récupération de l'élément overlay
+        const overlay = document.querySelector('.overlay');
+        // Récupération de tous les éléments images cliquables
+        const zoomableImages = document.querySelectorAll('.post-image');
+
+        // Ajout d'un écouteur d'événement clic à chaque élément image cliquable
+        zoomableImages.forEach(image => {
+            image.addEventListener('click', () => {
+                // Mettre l'URL de l'image cliquée dans l'élément image zoomée
+                zoomedImage.src = image.src;
+                // Afficher l'image zoomée
+                zoomedImage.style.display = 'block';
+                // Afficher l'overlay
+                overlay.style.display = 'block';
+            });
+        });
+
+        // Ajout d'un écouteur d'événement clic à l'overlay
+        overlay.addEventListener('click', () => {
+            // Cacher l'image zoomée
+            zoomedImage.style.display = 'none';
+            // Cacher l'overlay
+            overlay.style.display = 'none';
+        });
+    </script>
+
+    <script>
+        let profileDropdownList = document.querySelector(".profile-dropdown-list");
+        let btn = document.querySelector(".profile-dropdown-btn");
+
+        let classList = profileDropdownList.classList;
+
+        const toggle = () => classList.toggle("active");
+
+        window.addEventListener("click", function (e) {
+            if (!btn.contains(e.target)) classList.remove("active");
+        });
+    </script>
+
+</body>
+
+</html>

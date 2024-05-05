@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="../Css/Settings.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <script>
+        let profileDropdownList = document.querySelector(".profile-dropdown-list");
+        let btn = document.querySelector(".profile-dropdown-btn");
+
+        let classList = profileDropdownList.classList;
+
+        const toggle = () => classList.toggle("active");
+
+        window.addEventListener("click", function (e) {
+            if (!btn.contains(e.target)) classList.remove("active");
+        });
+
+    </script>
+
+    <!-- Start NavBar -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <!-- <img src="/images/img/logo.PNG" class="brand-img" alt=""> -->
+            <h3>THE ATHLETIC </h3>
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <a href="./Accueil2.html" style="text-decoration: none;"><img src="/images/img/home.PNG" class="icon"
+                        alt=""></a>
+                <a href="Chat.html" style="text-decoration: none;"><img src="/images/img/messenger.PNG" class="icon"
+                        alt=""></a>
+                <a href="AddPost.html" style="text-decoration: none;"><img src="/images/img/add.PNG" class="icon"
+                        alt=""></a>
+                <img src="/images/img/explore.PNG" class="icon" alt="">
+                <a href="./Notifications.html" style="text-decoration: none;">
+                    <img src="/images/img/like.PNG" class="icon" alt="">
+                </a>
+                <div class="icon user-profile" onclick="toggle()">
+                    <ul class="profile-dropdown-list">
+                        <li class="profile-dropdown-list-item">
+                            <a href="./EditProfil.html">
+                                <i class="fa-regular fa-user"></i>
+                                Edit Profile
+                            </a>
+                        </li>
+                        <li class="profile-dropdown-list-item">
+                            <a href="./Securite.html">
+                                <i class="fa-solid fa-chart-line"></i>
+                                Securite
+                            </a>
+                        </li>
+
+                        <li class="profile-dropdown-list-item">
+                            <a href="./Settings.html">
+                                <i class="fa-solid fa-sliders"></i>
+                                Settings
+                            </a>
+                        </li>
+
+                        <li class="profile-dropdown-list-item">
+                            <a href="./LoginPrincipal.html">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End NavBar -->
+
+    <!-- Start Sidebar  -->
+    <aside class="sidebar">
+        <nav>
+            <button>
+                <span>
+                    <i class='bx bx-home'></i>
+                    <span>Home</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bx-search'></i>
+                    <span>Search</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bx-compass'></i>
+                    <span>Explore</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bxl-telegram'>
+                        <!-- <span>13</span> -->
+                    </i>
+                    <span>Messages</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bx-heart'>
+                        <!-- <em></em> -->
+                    </i>
+                    <span>Notifications</span>
+                </span>
+            </button>
+
+            <button>
+                <span>
+                    <i class='bx bx-plus-circle'></i>
+                    <span>Create</span>
+                </span>
+            </button>
+
+            <!-- <button>
+          <span>
+              <img src="/images/pdp.jpg" alt="" style="border-radius: 50%;">
+              <span>Profile</span>
+          </span>
+      </button> -->
+
+        </nav>
+    </aside>
+    <!-- End SideBar -->
+
+    <!-- Start BottomBar -->
+    <nav class="Bottombar">
+        <div class="nav-wrapper">
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <a href="./Accueil2.html" style="text-decoration: none;">
+                    <img src="/images/img/home.PNG" class="icon" alt="">
+                </a>
+                <img src="/images/img/messenger.PNG" class="icon" alt="">
+                <a href="./AddPost.html" style="text-decoration: none;">
+                    <img src="/images/img/add.PNG" class="icon" alt=""></a>
+                <!-- <img src="/images/img/explore.PNG" class="icon" alt=""> -->
+                <a href="./Notifications.html" style="text-decoration: none;">
+                    <img src="/images/img/like.PNG" class="icon" alt="">
+                </a>
+                <a href="./profile.html" style="text-decoration: none;">
+                    <div class="icon user-profile"></div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End BottomBar -->
+
+    <!-- /* Start Settings*/ -->
+
+    <section class="main-Sett">
+        <div class="wrapper-Sett">
+            <div class="left-col">
+                <div class="post-Sett">
+                    <div class="info-Sett">
+                        <div class="user-Sett">
+                            <span class="gg--chevron-left" id="backButton"></span>
+                            <h1>Settings</h1>
+                        </div>
+                    </div>
+                    <div class="info-Sett">
+                        <div class="user-Sett profile-dropdown-list-item">
+                            <i class="fa-regular fa-user" style="font-weight: bold;"></i>
+                            <a href="./EditProfil.html">
+                                <p class="username-Sett"><span>Edit Profile</span></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-Sett">
+                        <div class="user-Sett profile-dropdown-list-item">
+                            <i class="fa-solid fa-sliders"></i>
+                            <a href="./Settings.html">
+                                <p class="username-Sett"><span>Settings</span></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="info-Sett">
+                        <div class="user-Sett profile-dropdown-list-item">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <a href="./Securite.html">
+                                <p class="username-Sett"><span>Securite</span></p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="info-Sett">
+                        <div class="user-Sett profile-dropdown-list-item">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <a href="./LoginPrincipal.html">
+                                <p class="username-Sett"><span>Logout</span></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /* End Settings */  -->
+
+    <script>
+        // JavaScript
+        document.getElementById('backButton').addEventListener('click', function () {
+            window.history.back();
+        });
+    </script>
+</body>
+
+</html>
