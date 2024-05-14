@@ -16,7 +16,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    /* background: #ffaa00; */
 }
 
 /* Start NavBar */
@@ -32,7 +31,6 @@ body {
     justify-content: center;
     padding: 5px 0;
     z-index: 1;
-    /* margin-bottom: 10px; */
 }
 
 .nav-wrapper {
@@ -105,12 +103,9 @@ body {
     padding: 5px 0;
 
 }
-
 /* End BottomBar */
 
-
 /* Start SidBar  */
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -280,11 +275,6 @@ body {
 
 /* Styles pour les tablettes */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* .sidebar {
-        width: 72px;
-        display: block;
-    } */
-
     .sidebar {
         display: none;
     }
@@ -322,14 +312,12 @@ body {
 @media only screen and (min-width: 1024px) {
 
     .sidebar {
-        /* width: 72px; */
         display: block;
     }
 }
 
 
 /* Start Edit Profile Form */
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 img {
@@ -356,16 +344,13 @@ input {
 
 .card-image-EdP {
 	width: 150px;
-	/* Définir une largeur fixe pour l'image */
 	height: 150px;
-	/* Définir une hauteur fixe pour l'image */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
 	overflow: hidden;
 	margin: 0 auto 2rem;
-	/* Ajuster la marge basse pour créer un espace entre l'image et le formulaire */
 	background-image: url(../images/pdp.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -387,8 +372,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
-
-	/* background: #ffaa00; */
 }
 
 .container-EdP {
@@ -526,17 +509,6 @@ body {
 	}
 }
 
-/* label {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    margin: 5px;
-    cursor: pointer;
-    font-size: 17px;
-} */
-
-
-
 /* Styles pour les appareils de petite taille (Mobile) */
 @media only screen and (max-width: 767px) {
 
@@ -628,7 +600,6 @@ body {
     border: none;
     cursor: pointer;
 }
-
 
 /* End Edit Profile form */
 

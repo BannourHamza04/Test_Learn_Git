@@ -335,19 +335,15 @@ body {
 
     .wrapper {
         width: 37%;
-        /* ou la largeur que vous souhaitez */
     }
 
     .sidebar {
-        /* width: 72px; */
         display: block;
     }
 }
 
 
 /* Start Notifications */
-
-
 .post {
     width: 100%;
     height: auto;
@@ -405,7 +401,6 @@ body {
     border: none;
     cursor: pointer;
 }
-
 /* End Notifications */
 
 /* Styles pour le chevron gauche */
@@ -415,11 +410,8 @@ body {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-right: 15px solid #000;
-    /* Couleur noire pour le chevron */
     margin-right: 10px;
     cursor: pointer;
-    /* Ajout d'un curseur pointer pour indiquer que c'est cliquable */
-    /* z-index: -78; */
 }
 
 .gg--chevron-left {
@@ -481,7 +473,6 @@ body {
 }
 
 .profile-dropdown-btn span {
-    /* margin: 0 0.5rem; */
     margin-right: 0;
 }
 

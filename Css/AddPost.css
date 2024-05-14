@@ -1,7 +1,5 @@
 /* Import Google Font - Poppins */
-/* Import Google Font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 body {
@@ -9,8 +7,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    /* background: #ffaa00; */
+
 }
 
 
@@ -44,7 +41,6 @@ body {
     justify-content: center;
     padding: 5px 0;
     z-index: 1;
-    /* margin-bottom: 10px; */
 }
 
 .nav-wrapper {
@@ -243,11 +239,6 @@ body {
     margin-top: 15%;
 }
 
-/* .sidebar > nav button:last-child{
-    margin-top: auto;
-} */
-
-
 /* Styles pour les appareils de petite taille (Mobile) */
 @media only screen and (max-width: 767px) {
 
@@ -295,11 +286,6 @@ body {
 
 /* Styles pour les tablettes */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* .sidebar {
-        width: 72px;
-        display: block;
-    } */
-
     .sidebar {
         display: none;
     }
@@ -348,7 +334,6 @@ body {
 
     .wrapper {
         width: 37%;
-        /* ou la largeur que vous souhaitez */
     }
 
     .sidebar {
@@ -365,9 +350,7 @@ body {
     background: #1a81ff;
 }
 
-.container-AddP {
-    /* width: 500px;
-    height: 480px; */       
+.container-AddP {   
     margin: 10px;
     overflow: hidden;
     background: #fff;
@@ -381,7 +364,6 @@ body {
 }
 
 .container-AddP .wrapper-AddP {
-    /* width: 1000px; */
     display: flex;
 }
 
@@ -730,11 +712,8 @@ form textarea:valid~button:hover {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-right: 15px solid #000;
-    /* Couleur noire pour le chevron */
     margin-right: 10px;
     cursor: pointer;
-    /* Ajout d'un curseur pointer pour indiquer que c'est cliquable */
-    /* z-index: -78; */
 }
 
 .gg--chevron-left {
@@ -797,7 +776,6 @@ form textarea:valid~button:hover {
 }
 
 .profile-dropdown-btn span {
-    /* margin: 0 0.5rem; */
     margin-right: 0;
 }
 

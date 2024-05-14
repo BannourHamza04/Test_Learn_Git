@@ -1,29 +1,17 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Facebook Post Box Clone | CodingNepal</title>
-    <link rel="stylesheet" href="../Css/AddPost.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FontAweome CDN Link for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link
-        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Add Post</title>
+    <link rel="stylesheet" href="../Css/Add.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
+
     <script>
         let profileDropdownList = document.querySelector(".profile-dropdown-list");
         let btn = document.querySelector(".profile-dropdown-btn");
@@ -42,7 +30,6 @@
     <!-- Start NavBar -->
     <nav class="navbar">
         <div class="nav-wrapper">
-            <!-- <img src="../images/img/logo.PNG" class="brand-img" alt=""> -->
             <h3>THE ATHLETIC </h3>
             <input type="text" class="search-box" placeholder="search">
             <div class="nav-items">
@@ -93,10 +80,6 @@
 
     <!-- Start Sidebar  -->
     <aside class="sidebar">
-        <!-- <header class="sidebar-header">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" class="logo-img">
-  </header> -->
-
         <nav>
             <button>
                 <span>
@@ -122,7 +105,6 @@
             <button>
                 <span>
                     <i class='bx bxl-telegram'>
-                        <!-- <span>13</span> -->
                     </i>
                     <span>Messages</span>
                 </span>
@@ -131,7 +113,6 @@
             <button>
                 <span>
                     <i class='bx bx-heart'>
-                        <!-- <em></em> -->
                     </i>
                     <span>Notifications</span>
                 </span>
@@ -143,14 +124,6 @@
                     <span>Create</span>
                 </span>
             </button>
-
-            <!-- <button>
-          <span>
-              <img src="../images/pdp.jpg" alt="" style="border-radius: 50%;">
-              <span>Profile</span>
-          </span>
-      </button> -->
-
         </nav>
     </aside>
     <!-- End SideBar -->
@@ -166,7 +139,6 @@
                 <img src="../images/img/messenger.PNG" class="icon" alt="">
                 <a href="./AddPost.html" style="text-decoration: none;">
                     <img src="../images/img/add.PNG" class="icon" alt=""></a>
-                <!-- <img src="../images/img/explore.PNG" class="icon" alt=""> -->
                 <a href="./Notifications.html" style="text-decoration: none;">
                     <img src="../images/img/like.PNG" class="icon" alt="">
                 </a>
@@ -179,55 +151,31 @@
     <!-- End BottomBar -->
 
 
-    <!-- Start Add Post -->
 
-    <div class="container-AddP">
-        <div class="wrapper-AddP">
-            <section class="post-AddP">
-
-                <header><span class="gg--chevron-left" id="backButton"></span>Create Post</header>
-                <form action="#">
-                    <div class="content-AddP">
-                        <img src="../images/pdp.jpg" alt="logo">
-                        <div class="details-AddP">
-                            <p>Hamza BANNOUR</p>
-                            <div class="privacy-AddP">
-                                <i class="fas fa-user-friends"></i>
-                                <span>Friends</span>
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <textarea placeholder="What's on your mind, CodingNepal?" spellcheck="false" required></textarea>
-                    <div class="theme-emoji-AddP">
-                        <img src="../images/fb-icons/theme.svg" alt="theme">
-                        <img src="../images/fb-icons/smile.svg" alt="smile">
-                    </div>
-                    <div class="options-AddP">
-                        <p>Add to Your Post</p>
-                        <ul class="list-AddP">
-                            <li><img src="../images/fb-icons/gallery.svg" alt="gallery"></li>
-                            <li><img src="../images/fb-icons/tag.svg" alt="gallery"></li>
-                            <li><img src="../images/fb-icons/emoji.svg" alt="gallery"></li>
-                            <li><img src="../images/fb-icons/mic.svg" alt="gallery" /></li>
-                            <li><img src="../images/fb-icons/more.svg" alt="gallery"></li>
-                        </ul>
-                    </div>
-                    <button>Post</button>
-                </form>
-            </section>
-
+    <!-- Post Form -->
+    <div class="container">
+        <div class="form">
+            <div class="title">
+                <span class="gg--chevron-left" id="backButton"></span>
+            <h2 style="color: orange;">Create Post</h2>
+            </div>
+            <div class="input-group">
+                <label for="content" class="label-content">Post content :</label>
+                <input class="content-post" type="text" placeholder="Add your post content" required>
+            </div>
+            <div class="input-group">
+                <label for="upload-img" style="cursor: pointer; color: orange; margin: 5px;"> Click to Choose your image post.</label>
+                <input type="file" id="upload-img" >
+            </div>
+            <input class="input-submit" type="submit" value="Create">
         </div>
     </div>
 
-    <!-- End Add Post -->
 
     <script>
-        // JavaScript
-          document.getElementById('backButton').addEventListener('click', function() {
-              window.history.back();
-          });
-      </script>
-
+        document.getElementById('backButton').addEventListener('click', function() {
+            window.history.back();
+        });
+    </script>
 </body>
 </html>

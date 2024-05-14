@@ -229,11 +229,6 @@ body {
     margin-top: 15%;
 }
 
-/* .sidebar > nav button:last-child{
-    margin-top: auto;
-} */
-
-
 /* Styles pour les appareils de petite taille (Mobile) */
 @media only screen and (max-width: 767px) {
 
@@ -281,11 +276,6 @@ body {
 
 /* Styles pour les tablettes */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* .sidebar {
-        width: 72px;
-        display: block;
-    } */
-
     .sidebar {
         display: none;
     }
@@ -335,19 +325,15 @@ body {
 
     .wrapper {
         width: 37%;
-        /* ou la largeur que vous souhaitez */
     }
 
     .sidebar {
-        /* width: 72px; */
         display: block;
     }
 }
 
 
 /* Start Notifications */
-
-
 .post {
     width: 100%;
     height: auto;
@@ -410,7 +396,6 @@ body {
 
 .button {
     background-color: #04AA6D;
-    /* Green */
     border: none;
     color: white;
     padding: 3px 17px;
@@ -473,7 +458,6 @@ body {
 }
 
 .profile-dropdown-btn span {
-    /* margin: 0 0.5rem; */
     margin-right: 0;
 }
 

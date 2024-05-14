@@ -141,8 +141,8 @@ ul {
     bottom: 200px;
     left: 0;
 }
-
 /* End Global Rules */
+
 /* Start Header */
 .header {
     background-color: white;
@@ -176,7 +176,6 @@ ul {
     background: #ff7200;
     border: none;
     margin-bottom: 10px;
-    /* margin-left: 20px; */
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
@@ -335,7 +334,6 @@ ul {
 .header .mega-menu .links li a i {
     margin-right: 10px;
 }
-
 /* End Header */
 
 /* Start Landing */
@@ -355,7 +353,6 @@ ul {
     background-size: cover;
     z-index: -1;
     margin: 0px;
-    /* transform: skewY(-6deg); */
     transform-origin: top left;
 }
 
@@ -431,7 +428,6 @@ ul {
 .landing .go-down {
     color: var(--main-color);
     position: absolute;
-    /* bottom: 30px; */
     left: 50%;
     transform: translateX(-50%);
     transition: var(--main-transition);
@@ -444,5 +440,4 @@ ul {
 .landing .go-down i {
     animation: bouncing 1.5s infinite;
 }
-
 /* End Landing */

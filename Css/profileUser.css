@@ -30,7 +30,6 @@ body {
     justify-content: center;
     padding: 5px 0;
     z-index: 1;
-    /* margin-bottom: 10px; */
 }
 
 .nav-wrapper {
@@ -103,7 +102,6 @@ body {
     padding: 5px 0;
 
 }
-
 /* End BottomBar */
 
 /* Start sideBar */
@@ -229,11 +227,6 @@ body {
     margin-top: 15%;
 }
 
-/* .sidebar > nav button:last-child{
-    margin-top: auto;
-} */
-
-
 /* Styles pour les appareils de petite taille (Mobile) */
 @media only screen and (max-width: 767px) {
 
@@ -281,11 +274,6 @@ body {
 
 /* Styles pour les tablettes */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    /* .sidebar {
-        width: 72px;
-        display: block;
-    } */
-
     .sidebar {
         display: none;
     }
@@ -335,11 +323,9 @@ body {
 
     .wrapper {
         width: 37%;
-        /* ou la largeur que vous souhaitez */
     }
 
     .sidebar {
-        /* width: 72px; */
         display: block;
     }
 }
@@ -356,7 +342,6 @@ img {
     max-width: 93.5rem;
     margin: 0 auto;
     padding: 2rem;
-    /* margin-top: 55px; */
 }
 
 main{
@@ -392,7 +377,6 @@ main{
 
 .profile {
     font-size: 10px;
-    /* padding: 4rem 0; */
 }
 
 .profile::after {
@@ -482,13 +466,6 @@ main{
 /* Media Query */
 
 @media screen and (max-width: 768px) {
-    /* .user-Prof {
-        position: absolute;
-        top: 55px;
-        left: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    } */
     main{
         position: absolute;
         top: 460px;
@@ -502,16 +479,11 @@ main{
         border-top-left-radius: 8px;
         display: flex;
         flex-wrap: wrap;
-        /* padding: 4rem 0; */
         position: absolute;
         top: 50px;
         left: 10px;
         width: 95%;
     }
-    /* .profile {
-        margin: 10px;
-
-    } */
 
     .profile::after {
         display: none;
@@ -649,7 +621,6 @@ main{
 
 /* Start Gallery Section */
 
-/* Gallery */
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -676,7 +647,6 @@ main{
     top: 0px;
     right: 0px;
 }
-
 
 /* End Gallery Section*/
 
@@ -804,7 +774,6 @@ main{
         max-width: 32.1rem;
         margin: 0 auto;
         padding: 0 2rem;
-        /* margin-top: 25px; */
     }
 
     @supports (display: grid) {
@@ -866,7 +835,6 @@ main{
         max-width: 33%;
     }
 
-    /* Mobile Tabs */
     .mobile-only {
         display: block;
     }
@@ -928,7 +896,6 @@ main{
 }
 
 .profile-dropdown-btn span {
-    /* margin: 0 0.5rem; */
     margin-right: 0;
 }
 
@@ -1007,8 +974,6 @@ main{
     width: 100%;
     height: 60px;
     display: block;
-    /* justify-content: space-between;
-    align-items: center; */
     padding: 0 0px;
     margin-bottom: 10px;
 }
@@ -1034,4 +999,3 @@ main{
     display: flex;
     align-items: center;
 }
-

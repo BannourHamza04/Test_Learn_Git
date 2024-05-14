@@ -25,7 +25,6 @@
     <!-- Start NavBar -->
     <nav class="navbar">
         <div class="nav-wrapper">
-            <!-- <img src="/images/img/logo.PNG" class="brand-img" alt=""> -->
             <h3>THE ATHLETIC </h3>
             <input type="text" class="search-box" placeholder="search">
             <div class="nav-items">
@@ -76,10 +75,6 @@
 
     <!-- Start Sidebar  -->
     <aside class="sidebar">
-        <!-- <header class="sidebar-header">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" class="logo-img">
-  </header> -->
-
         <nav>
             <button>
                 <span>
@@ -149,7 +144,6 @@
                 <img src="../images/img/messenger.PNG" class="icon" alt="">
                 <a href="./AddPost.html" style="text-decoration: none;">
                     <img src="../images/img/add.PNG" class="icon" alt=""></a>
-                <!-- <img src="../images/img/explore.PNG" class="icon" alt=""> -->
                 <a href="./Notifications.html" style="text-decoration: none;">
                     <img src="../images/img/like.PNG" class="icon" alt="">
                 </a>
@@ -260,38 +254,6 @@
                                 </span>
                                 <!-- <i class="fa-regular fa-heart"></i> -->
                             </div>
-                            <div class="comment">
-                                <img src="../images/pdp.jpg" alt="" />
-                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Explicabo nesciunt consectetur.
-                                    <div class="desc">1h ago <span>Reply</span></div>
-                                </span>
-                                <!-- <i class="fa-regular fa-heart"></i> -->
-                            </div>
-                            <div class="comment">
-                                <img src="../images/pdp.jpg" alt="" />
-                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Explicabo.
-                                    <div class="desc">1h ago <span>Reply</span></div>
-                                </span>
-                                <!-- <i class="fa-regular fa-heart"></i> -->
-                            </div>
-                            <div class="comment">
-                                <img src="../images/pdp.jpg" alt="" />
-                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Explicabo nesciunt consectetur quos.
-                                    <div class="desc">1h ago <span>Reply</span></div>
-                                </span>
-                                <!-- <i class="fa-regular fa-heart"></i> -->
-                            </div>
-                            <div class="comment">
-                                <img src="../images/pdp.jpg" alt="" />
-                                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Explicabo.
-                                    <div class="desc">1h ago <span>Reply</span></div>
-                                </span>
-                                <!-- <i class="fa-regular fa-heart"></i> -->
-                            </div>
                         </div>
 
                         <div class="new-comment">
@@ -314,7 +276,6 @@
         const overlay = document.querySelector('.overlay');
         // Récupération de tous les éléments images cliquables
         const zoomableImages = document.querySelectorAll('.post-image');
-
         // Ajout d'un écouteur d'événement clic à chaque élément image cliquable
         zoomableImages.forEach(image => {
             image.addEventListener('click', () => {
@@ -326,7 +287,6 @@
                 overlay.style.display = 'block';
             });
         });
-
         // Ajout d'un écouteur d'événement clic à l'overlay
         overlay.addEventListener('click', () => {
             // Cacher l'image zoomée
@@ -339,11 +299,8 @@
     <script>
         let profileDropdownList = document.querySelector(".profile-dropdown-list");
         let btn = document.querySelector(".profile-dropdown-btn");
-
         let classList = profileDropdownList.classList;
-
         const toggle = () => classList.toggle("active");
-
         window.addEventListener("click", function (e) {
             if (!btn.contains(e.target)) classList.remove("active");
         });
